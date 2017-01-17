@@ -2,6 +2,7 @@ finalize_base = function() {
 	kiki_weapon_stats = $('#select_gear :selected').val();
 	grade = $('#select_grade :selected').val();
 	enhance = $('#select_enhance :selected').val();
+	
 	if (kiki_weapon_stats == 'silver_fox_bead') {
 		if (grade == 'epic') {
 			if (enhance == 1) {
@@ -55,6 +56,21 @@ change_enhance = function(){
 }
 
 change_grade = function(){
+	kiki_weapon_stats = $('#select_gear :selected').val();
+	if (kiki_weapon_stats == 'silver_fox_bead') {
+		$('option').each(
+			function(){
+				options = $(this).val()
+				if (options == 'common') { $(this).css('display','none') }
+				if (options == 'uncommon') { $(this).css('display','none') }
+				if (options == 'rare') { $(this).css('display','none') }
+				if (options == 'heroic') { $(this).css('display','none') }
+				if (options == 'epic') { $(this).css('display','auto') }
+				if (options == 'legendary') { $(this).css('display','auto') }
+				if (options == 'immortal') { $(this).css('display','auto') }
+			}
+		)
+	}
 	$('#select_grade').css('display','block')
 	$('#select_grade').change(change_enhance)
 }
