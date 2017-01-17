@@ -49,7 +49,7 @@ finalize_base = function() {
 	
 	$('#select_enhance').css('display','block')
 }
-change_enhance {
+change_enhance = function(){
 	$('#select_enhance').css('display','block')
 	$('#select_enhance').change(finalize_base)
 }
