@@ -57,6 +57,9 @@ change_enhance = function(){
 
 change_grade = function(){
 	kiki_weapon_stats = $('#select_gear :selected').val();
+	
+	$('#select_grade').css('display','block')
+	
 	if (kiki_weapon_stats == 'silver_fox_bead') {
 		$('option').each(
 			function(){
@@ -71,7 +74,6 @@ change_grade = function(){
 			}
 		)
 	}
-	$('#select_grade').css('display','block')
 	$('#select_grade').change(change_enhance)
 }
 
