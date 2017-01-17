@@ -14,3 +14,15 @@
 #boots {
 	background-image:url('/images/build/boots.png');
 }
+#weapon {
+	background-image:url('/images/build/weapon.png');
+}
+#ornament {
+	background-image:url('/images/build/ornament.png');
+}
+#ring {
+	background-image:url('/images/build/ring.png');
+}
+#necklace {
+	background-image:url('/images/build/necklace.png');
+}
