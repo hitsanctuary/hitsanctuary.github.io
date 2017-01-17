@@ -60,7 +60,7 @@ change_grade = function(){
 	
 	$('#select_grade').css('display','block')
 	
-	if (kiki_weapon_stats == 'silver_fox_bead') {
+	if (kiki_weapon_stats == 'silver_fox_bead' || 'glorious_wreath' || 'disciplinary_thorn') {
 		$('option').each(
 			function(){ 
 				options = $(this).val()
