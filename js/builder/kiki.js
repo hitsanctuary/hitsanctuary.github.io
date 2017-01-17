@@ -1,12 +1,21 @@
-change_weapon = function() {
+finalize_base = function() {
 	kiki_weapon_stats = $('#select_gear :selected').val();
 	grade = $('#select_grade :selected').val();
+	enhance = $('#select_enhance :selected').val();
 	if (kiki_weapon_stats == 'silver_fox_bead') {
 		if (grade == 'epic') {
-			weapon_att = 5968
-			weapon_att_spd = 3.3
-			weapon_crit = 7.8
-			weapon_crit_dmg = 36.2
+			if (enhance == 1) {
+				weapon_att = 5968
+				weapon_att_spd = 3.3
+				weapon_crit = 7.8
+				weapon_crit_dmg = 36.2
+			}
+			if (enhance == 20) {
+				weapon_att = 11440
+				weapon_att_spd = 3.8
+				weapon_crit = 9.6
+				weapon_crit_dmg = 39.7
+			}
 		}
 		if (grade == 'legendary') {
 			weapon_att = 12304
@@ -37,11 +46,17 @@ change_weapon = function() {
 	$('#att_spd').html(weapon_att_spd)
 	$('#crit').html(weapon_crit)
 	$('#crit_dmg').html(weapon_crit_dmg)
+	
+	$('#select_enhance').css('display','block')
+}
+change_enhance {
+	$('#select_enhance').css('display','block')
+	$('#select_enhance').change(finalize_base)
 }
 
 change_grade = function(){
 	$('#select_grade').css('display','block')
-	$('#select_grade').change(change_weapon)
+	$('#select_grade').change(change_enhance)
 }
 
 kiki_weapon = function() {
