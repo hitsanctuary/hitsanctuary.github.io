@@ -2,15 +2,15 @@
 	height:168px;
 	width:168px;
 }
-.gearselect #helm {
+#helm {
 	background-image:url('/images/build/helm.png');
 }
-.gearselect #chest {
+#chest {
 	background-image:url('/images/build/chest.png');
 }
-.gearselect #gloves {
+#gloves {
 	background-image:url('/images/build/gloves.png');
 }
-.gearselect #boots {
+#boots {
 	background-image:url('/images/build/boots.png');
 }
