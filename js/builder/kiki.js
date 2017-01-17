@@ -6,6 +6,18 @@ change_helm = function() {
 		weapon_crit = 12
 		weapon_crit_dmg = 44.3
 	}
+	if (kiki_helm_stats == 'glorious_wreath') {
+		weapon_att = 27469
+		weapon_att_spd = 4.6
+		weapon_crit = 8
+		weapon_crit_dmg = 44.3
+	}
+	if (kiki_helm_stats == 'disciplinary_thorn') {
+		weapon_att = 27469
+		weapon_att_spd = 4.6
+		weapon_crit = 12
+		weapon_crit_dmg = 34.5
+	}
 	
 	$('#attack').html(weapon_att)
 }
