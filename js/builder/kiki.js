@@ -1,6 +1,6 @@
 change_helm = function() {
-	Kiki_Weapon = $('#select_gear :selected').val();
-	if (Kiki_Weapon == 'silver_fox_bead') {
+	kiki_helm_stats = $('#select_gear :selected').val();
+	if (kiki_helm_stats == 'silver_fox_bead') {
 		weapon_att = 24976
 		weapon_att_spd = 4.6
 		weapon_crit = 12
