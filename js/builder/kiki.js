@@ -62,7 +62,7 @@ change_grade = function(){
 	
 	if (kiki_weapon_stats == 'silver_fox_bead') {
 		$('option').each(
-			function(){
+			function(){ 
 				options = $(this).val()
 				if (options == 'common') { $(this).css('display','none') }
 				if (options == 'uncommon') { $(this).css('display','none') }
