@@ -5,3 +5,12 @@
 .gearselect #helm {
 	background-image:url(/images/build/helm.png);
 }
+.gearselect #chest {
+	background-image:url(/images/build/chest.png);
+}
+.gearselect #gloves {
+	background-image:url(/images/build/gloves.png);
+}
+.gearselect #boots {
+	background-image:url(/images/build/boots.png);
+}
