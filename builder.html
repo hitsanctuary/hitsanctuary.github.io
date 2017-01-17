@@ -12,11 +12,12 @@
 	<meta name="keywords" content="hit,heroes of incredible tales,db,database" />
   
 	<link rel="stylesheet" href="/css/builder.css" />
-  
-  <script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
-  <script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+	
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.js"></script><!--datatablejs-->
+	<script type="text/javascript" src="/js/builder/kiki.js"></script>
+	
 </head>
 <body>
 <h1><img src="http://assets.tumblr.com/images/x.gif?v=1" class="homeicon" />HIT Sanctuary &#8226; Item Database</h1>
@@ -48,14 +49,11 @@
 	<button class="gearselect" id="necklace"></button>
 </section>
 
-<section>
+<section id="section_detail">
 	<h2>Select Gear</h2>
-		<h3>Helm</h3>
-		<select id="select_helm">
-			<option value="empty">Select Head Armor</option>
-			<option value="silver_fox_bead">Silver Fox Bead</option>
-			<option value="glorious_wreath">Glorious Wreath</option>
-			<option value="disciplinary_thorn">Disciplinary Thorn</option>
+		<h3 id="part_title"></h3>
+		<select id="select_gear" value="empty">
+			<option value="empty">Select Armor</option>
 		</select>
 		
 		<select id="select_grade">

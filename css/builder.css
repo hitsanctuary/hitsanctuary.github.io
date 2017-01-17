@@ -26,3 +26,7 @@
 #necklace {
 	background-image:url('/images/build/necklace.png');
 }
+
+#section_detail select{
+	display:none;
+}
