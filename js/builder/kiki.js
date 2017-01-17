@@ -31,7 +31,7 @@ kiki_helm = function() {
 		'<option value="glorious_wreath">Glorious Wreath</option>'+
 		'<option value="disciplinary_thorn">Disciplinary Thorn</option>'
 	$('#select_gear').html(helm_pieces)
-	$('#select_gear :selected').change(change_helm)
+	$('#select_gear').change(change_helm)
 }
 
 kiki_spec = function() {
