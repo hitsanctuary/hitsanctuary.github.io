@@ -6,13 +6,6 @@ finalize_base = function() {
 	
 	if (kiki_weapon_stats == 'silver_fox_bead') {
 		if (grade == 'epic') {
-			$('#select_enhance option').css('display','auto')
-			$('#select_enhance option').each(
-				function(){ 
-					options = $(this).val()
-					if (options == '30') { $(this).css('display','none') }
-				}
-			)
 			if (enhance == 1) {
 				weapon_att = 5968
 				weapon_att_spd = 3.3
@@ -27,13 +20,6 @@ finalize_base = function() {
 			}
 		}
 		if (grade == 'legendary') {
-			$('#select_enhance option').css('display','auto')
-			$('#select_enhance option').each(
-				function(){ 
-					options = $(this).val()
-					if (options == '30') { $(this).css('display','none') }
-				}
-			)
 			if (enhance == 1) {
 				weapon_att = 12304
 				weapon_att_spd = 3.9
@@ -48,7 +34,6 @@ finalize_base = function() {
 			}
 		}
 		if (grade == 'immortal') {
-			$('#select_enhance option').css('display','auto')
 			if (enhance == 1) {
 				weapon_att = 24976
 				weapon_att_spd = 4.6
@@ -91,6 +76,27 @@ finalize_base = function() {
 change_enhance = function(){
 	$('#select_enhance').css('display','block')
 	$('#select_enhance').change(finalize_base)
+	if (grade == 'epic') {
+			$('#select_enhance option').css('display','auto')
+			$('#select_enhance option').each(
+				function(){ 
+					options = $(this).val()
+					if (options == '30') { $(this).css('display','none') }
+				}
+			)
+	}
+	if (grade == 'legendary') {
+			$('#select_enhance option').css('display','auto')
+			$('#select_enhance option').each(
+				function(){ 
+					options = $(this).val()
+					if (options == '30') { $(this).css('display','none') }
+				}
+			)
+	}
+	if (grade == 'immortal') {
+			$('#select_enhance option').css('display','auto')
+	}
 }
 
 change_grade = function(){
