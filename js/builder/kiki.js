@@ -75,7 +75,8 @@ finalize_base = function() {
 }
 change_enhance = function(){
 	$('#select_enhance').css('display','block')
-	$('#select_enhance').change(finalize_base)
+	grade = $('#select_grade :selected').val();
+	
 	if (grade == 'epic') {
 			$('#select_enhance option').css('display','auto')
 			$('#select_enhance option').each(
@@ -97,6 +98,7 @@ change_enhance = function(){
 	if (grade == 'immortal') {
 			$('#select_enhance option').css('display','auto')
 	}
+	$('#select_enhance').change(finalize_base)
 }
 
 change_grade = function(){
