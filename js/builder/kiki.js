@@ -6,7 +6,8 @@ finalize_base = function() {
 	
 	if (kiki_weapon_stats == 'silver_fox_bead') {
 		if (grade == 'epic') {
-			$('option').each(
+			$('#select_enhance option').css('display','auto')
+			$('#select_enhance option').each(
 				function(){ 
 					options = $(this).val()
 					if (options == '30') { $(this).css('display','none') }
@@ -26,16 +27,46 @@ finalize_base = function() {
 			}
 		}
 		if (grade == 'legendary') {
-			weapon_att = 12304
-			weapon_att_spd = 3.9
-			weapon_crit = 9.8
-			weapon_crit_dmg = 40
+			$('#select_enhance option').css('display','auto')
+			$('#select_enhance option').each(
+				function(){ 
+					options = $(this).val()
+					if (options == '30') { $(this).css('display','none') }
+				}
+			)
+			if (enhance == 1) {
+				weapon_att = 12304
+				weapon_att_spd = 3.9
+				weapon_crit = 9.8
+				weapon_crit_dmg = 40
+			}
+			if (enhance == 20) {
+				weapon_att = 23248
+				weapon_att_spd = 4.5
+				weapon_crit = 11.9
+				weapon_crit_dmg = 44.1
+			}
 		}
 		if (grade == 'immortal') {
-			weapon_att = 24976
-			weapon_att_spd = 4.6
-			weapon_crit = 12
-			weapon_crit_dmg = 44.3
+			$('#select_enhance option').css('display','auto')
+			if (enhance == 1) {
+				weapon_att = 24976
+				weapon_att_spd = 4.6
+				weapon_crit = 12
+				weapon_crit_dmg = 44.3
+			}
+			if (enhance == 20) {
+				weapon_att = 46864
+				weapon_att_spd = 5.4
+				weapon_crit = 14.9
+				weapon_crit_dmg = 49.8
+			}
+			if (enhance == 30) {
+				weapon_att = 66448
+				weapon_att_spd = 5.9
+				weapon_crit = 16.4
+				weapon_crit_dmg = 52.8
+			}
 		}
 	}
 	if (kiki_weapon_stats == 'glorious_wreath') {
