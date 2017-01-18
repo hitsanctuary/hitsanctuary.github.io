@@ -99,6 +99,7 @@ change_enhance = function(){
 			$('#select_enhance option').css('display','block')
 	}
 	$('#select_enhance').change(finalize_base)
+	finalize_base()
 }
 
 change_grade = function(){
