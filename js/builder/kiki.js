@@ -78,7 +78,7 @@ change_enhance = function(){
 	grade = $('#select_grade :selected').val();
 	
 	if (grade == 'epic') {
-			$('#select_enhance option').css('display','auto')
+			$('#select_enhance option').css('display','block')
 			$('#select_enhance option').each(
 				function(){ 
 					options = $(this).val()
@@ -87,7 +87,7 @@ change_enhance = function(){
 			)
 	}
 	if (grade == 'legendary') {
-			$('#select_enhance option').css('display','auto')
+			$('#select_enhance option').css('display','block')
 			$('#select_enhance option').each(
 				function(){ 
 					options = $(this).val()
@@ -96,7 +96,7 @@ change_enhance = function(){
 			)
 	}
 	if (grade == 'immortal') {
-			$('#select_enhance option').css('display','auto')
+			$('#select_enhance option').css('display','block')
 	}
 	$('#select_enhance').change(finalize_base)
 }
