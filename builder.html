@@ -11,30 +11,19 @@
 	<meta name="description" content="HIT Sanctuary is your database for all things HIT.">
 	<meta name="keywords" content="hit,heroes of incredible tales,db,database" />
   
-	<link rel="stylesheet" href="/css/builder.css" />
+	<link rel="stylesheet" href="css/builder.css" />
 	
-	<script type="text/javascript" src="/js/jquery-2.2.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-2.2.1.min.js"></script>
 	<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 
-	<script type="text/javascript" src="/js/builder/kiki.js"></script>
+	<script type="text/javascript" src="js/builder/kiki.js"></script>
 	
 </head>
 <body>
-<h1><img src="http://assets.tumblr.com/images/x.gif?v=1" class="homeicon" />HIT Sanctuary &#8226; Item Database</h1>
-<div id="bg" class="bg_index">
-    
-        
-        <section id="searchmenu">
-		<form action="search.html" method="get">
-		<input type="text" name="find" value="Search">
-		<input type="submit" value="?">
-		</form>
-		</section>
-
+<div id="headerimage">
+<h1><span id="mainline">HIT Sanctuary</span> <span id="subline">Game Database</span></h1>
         
 </div>
-<nav id="cssmenu">
-</nav>
 
 <section>
 	<h2>Build</h2>
@@ -42,7 +31,7 @@
 	<button class="gearselect" id="chest"></button>
 	<button class="gearselect" id="gloves"></button>
 	<button class="gearselect" id="boots"></button>
-	
+	<br />
 	<button class="gearselect" id="weapon"></button>
 	<button class="gearselect" id="ornament"></button>
 	<button class="gearselect" id="ring"></button>
@@ -78,7 +67,13 @@
 			<option value="empty">Select Unique Skill</option>
 		</select>
 		
-		<select id="select_jewel_slot">
+		<select id="select_jewel_slot_1">
+			<option value="empty">Select Jewel Slot</option>
+		</select>
+		<select id="select_jewel_slot_2">
+			<option value="empty">Select Jewel Slot</option>
+		</select>
+		<select id="select_jewel_slot_3">
 			<option value="empty">Select Jewel Slot</option>
 		</select>
 		
@@ -93,6 +88,8 @@
 		<select id="select_unique">
 			<option value="empty">Select Unique Skill</option>
 		</select>
+		
+		<button id="finalize_item">Update</button>
 </section>
 
 <section>
